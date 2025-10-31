@@ -1,0 +1,57 @@
+{
+    "name": "nictorgersen/kreg-php-client",
+    "description": "PHP client for KREG API using Laravel HTTP client",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NicTorgersen\\KregApiSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NicTorgersen\\KregApiSdk\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nichlas Torgersen",
+            "email": "nichlas@coretrek.no"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.92"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.25",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.15|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NicTorgersen\\KregApiSdk\\KregServiceProvider"
+            ],
+            "aliases": {
+                "Kreg": "NicTorgersen\\KregApiSdk\\Facades\\Kreg"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

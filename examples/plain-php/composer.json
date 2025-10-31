@@ -1,0 +1,21 @@
+{
+    "name": "nictorgersen/kreg-php-client-plain-example",
+    "description": "Plain PHP example for KREG PHP Client",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "nictorgersen/kreg-php-client": "*"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
