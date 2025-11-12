@@ -1,5 +1,6 @@
 {
     "name": "nictorgersen/kreg-php-client",
+    "version": "1.0.0",
     "description": "PHP client for KREG API using Laravel HTTP client",
     "type": "library",
     "license": "MIT",
